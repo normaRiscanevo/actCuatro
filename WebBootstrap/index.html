@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=0.5,user-scalable=no">
+   <title>Mi Galería Minimalista</title>
+
+    <style>
+
+      /* Demo styles */
+
+     html,body{background:#eee;margin:0;}
+    
+     .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;margin:20px auto;max-width:820px}
+     h1{font-size:12px;font-weight:normal;color:#222;margin:0;}
+     p{margin:0 0 20px}
+     a {color:#22BCB9;text-decoration:none;}
+     .galleria-info-description a {color: #bbb;}
+     .cred{margin-top:20px;font-size:11px;}
+
+     /* Gallery measures that will be applied */
+     .galleria {
+     height:420px;    /* defines a static gallery height */
+     max-width:820px; /* defines a responsive width */
+     }
+
+   </style>
+  
+         
+    <!-- Estilos de la master -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/estilo.css" />
+   
+    <!-- hoja de estilos miniml -->   
+    <link rel="stylesheet" type="text/css" href="galleria.miniml.css" media="all"  />
+  </head>
+  <body>
+    <!-- Aqui empieza mi contenido -->
+    <div class="container">
+      <div class="page-header">
+        <h1 class="text-center">Hola</h1>
+      </div>
+      <!-- menu de navegacion del sitio SPA -->
+      <ul class="navbar" >
+       <li>
+        <a href="#home" >Presentación</a>
+       </li>
+       
+       <li>
+        <a href="#formulario" >Preguntas</a>
+       </li>
+       <li>
+        <a href="#galeria" >Ver Galería</a>
+       </li>   
+      </ul>
+      
+      <!-- contenido adicional -->   
+      <div id="home">
+       <h3>
+       Bienvenido  
+       </h3>
+       <p>Mi nombre es Norma, me gusta la fotografía, por ahora estudio en un curso para principiantes sobre ello. Te mostraré algunas tomas que hice en el páramo Cruz Verde pues vivo cerca a él, es un hermoso paraíso, espero algún día lo puedas visitar.</p>  
+      </div>
+         
+      <div id="formulario">
+         <form name="fomr1" action="/recursoEnServidor" method="post" onsubmit="return validarForma(this);">
+          <h3> Enviar mensaje</h3>
+          <p>Nombre completo </p>
+            <input type="text" name="usuario" onfocus="this.select();" />
+          <p>Dirección de correo </p>
+            <input type="email" name="email" /> 
+          <p>Teléfono</p>
+            <input type="number"  /> 
+          <p>Mensaje</p>
+            <input type="text" /> 
+          <div class="margin-text altoSeparar">
+           <input type="submit" value="Enviar" class="default" />
+          </div>     
+         </form>
+      </div>
+        
+      
+      <div id="galeria">
+         
+      </div>    
+  </div>
+
+      
+    <!-- Aqui esta mi galeria -->    
+    <div class="content altoSeparar">
+     <div class="galleria">
+      
+       <a href="../imagenes/bicicGrande.jpg">
+         <img src="../imagenes/bicicPequenno.jpg"
+         data-big="../imagenes/bicicPrin.JPG"
+         data-description="by &lt;a href=&quot;https://unsplash.com/photos/bt-Sc22W-BE&quot;&gt;Jake Hills&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+         data-title="Mujer en bicicleta" >
+       </a>
+       <a href="../imagenes/CascadaHGrande.jpg">
+        <img src="../imagenes/CascadaHPequenno.jpg"
+         data-big="../imagenes/CascadaHPrin.JPG"
+         data-description="by &lt;a href=&quot;https://unsplash.com/photos/hBYzBU1xP6s&quot;&gt;Barn Images&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+         data-title="Cascada">
+       </a>
+       <a href="../imagenes/CascadaVGrande.jpg">
+        <img src="../imagenes/CascadaVPequenno.jpg"
+         data-big="../imagenes/CascadaVPrin.JPG"
+         data-description="by &lt;a href=&quot;https://unsplash.com/photos/hBYzBU1xP6s&quot;&gt;Barn Images&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+         data-title="Cascada  Vertical">
+       </a>
+       <a href="../imagenes/hongoGrande.jpg">
+        <img src="../imagenes/hongoPequenno.jpg"
+         data-big="../imagenes/hongoPrin.JPG"
+         data-description="by &lt;a href=&quot;https://unsplash.com/photos/hBYzBU1xP6s&quot;&gt;Barn Images&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+         data-title="Hongos pequeños">
+       </a>   
+       <a href="../imagenes/montannaGrande.jpg">
+        <img src="../imagenes/montannaPequenno.jpg"
+         data-big="../imagenes/montannaPrin.JPG"
+         data-description="by &lt;a href=&quot;https://unsplash.com/photos/hBYzBU1xP6s&quot;&gt;Barn Images&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+         data-title="Montaña">
+       </a>
+       <a href="../imagenes/senderoGrande.jpg">
+        <img src="../imagenes/senderoPequenno.jpg"
+         data-big="../imagenes/senderoPrin.JPG"
+         data-description="by &lt;a href=&quot;https://unsplash.com/photos/hBYzBU1xP6s&quot;&gt;Barn Images&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;"
+         data-title="Sendero">
+       </a>   
+      </div>
+    </div><!-- fin galeria -->  
+      
+    <!-- Librerias adicionales de bootstrap -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/curso.js"></script>      
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Librerias de plugins -->
+    <script src="./plugins/galleria.min.js"></script>  
+    
+      
+    <!-- load jQuery del Demo -->
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+    <!-- load Galleria del Demo -->
+    <script src="../WebBootstrap/plugins/galleria.js"></script>  
+    
+    <!-- script funcion de galeria -->  
+    <script>
+    $(function() {
+        // Load the Miniml theme
+        Galleria.loadTheme('lib/galleria.miniml.js');
+
+        // Initialize Galleria
+        Galleria.run('.galleria');
+    });
+    </script>
+        
+  </body>
+</html>

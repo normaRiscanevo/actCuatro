@@ -1,0 +1,38 @@
+h1{
+font-family: Helvetica, Geneva, Arial, sans-serif;
+color: #5486B3;
+}
+h3{
+font-family: Helvetica, Geneva, Arial, sans-serif;
+color: #5486B3;
+}
+ul.navbar li {
+list-style-type: none;
+background-color: white;
+margin: 8px 0px;
+padding: 5px;
+}
+/*modifico el color al pasar el cursor sobre una lista*/
+ul.navbar li :hover {
+background-color: skyblue;
+margin: 8px 0px;
+padding: 5px;
+}
+ul.navbar a {
+text-decoration: none;
+}
+/*modifico el color al pasar el cursor sobre un hipervinculo*/
+ul.navbar li a:hover {
+color: aliceblue;
+}
+a:link {
+color: #5486B3;
+}
+a:visited {
+color: purple;
+}
+.altoSeparar{
+margin-top: 30px;
+}
+
+/*onfocus="this.select();"*/
